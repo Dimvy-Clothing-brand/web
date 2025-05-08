@@ -1,143 +1,79 @@
-![Base](logo.webp)
+# Web
 
-# Base Web
+This repository, `web`, is a fork of [base/web](https://github.com/base/web) and serves as a public project for working with web technologies. The repository primarily uses MDX language.
 
-Base is a secure, low-cost, developer-friendly Ethereum L2 built to bring the next billion users onchain. It's built on Optimism's open-source [OP Stack](https://stack.optimism.io/).
+## Table of Contents
 
-<!-- Badge row 1 - status -->
+- [About the Project](#about-the-project)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
 
-[![GitHub contributors](https://img.shields.io/github/contributors/base/web)](https://github.com/base/web/graphs/contributors)
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/w/base/web)](https://github.com/base/web/graphs/contributors)
-[![GitHub Stars](https://img.shields.io/github/stars/base/web.svg)](https://github.com/base/web/stargazers)
-![GitHub repo size](https://img.shields.io/github/repo-size/base/web)
-[![GitHub](https://img.shields.io/github/license/base/web?color=blue)](https://github.com/base/web/blob/master/LICENSE.md)
+## About the Project
 
-<!-- Badge row 2 - links and profiles -->
+The `web` repository is designed for [add your description here]. It is publicly accessible and maintained by [nodoubtz](https://github.com/nodoubtz).
 
-[![Website base.org](https://img.shields.io/website-up-down-green-red/https/base.org.svg)](https://base.org)
-[![Blog](https://img.shields.io/badge/blog-up-green)](https://base.mirror.xyz/)
-[![Docs](https://img.shields.io/badge/docs-up-green)](https://docs.base.org/)
-[![Discord](https://img.shields.io/discord/1067165013397213286?label=discord)](https://base.org/discord)
-[![Twitter Base](https://img.shields.io/twitter/follow/Base?style=social)](https://twitter.com/Base)
+- **Homepage**: [https://base.org](https://base.org)
+- **Parent Repository**: [base/web](https://github.com/base/web)
+- **License**: Apache License 2.0
 
-<!-- Badge row 3 - detailed status -->
+## Features
 
-[![GitHub pull requests by-label](https://img.shields.io/github/issues-pr-raw/base/web)](https://github.com/base/web/pulls)
-[![GitHub Issues](https://img.shields.io/github/issues-raw/base/web.svg)](https://github.com/base/web/issues)
+- [Add key features of the project here]
 
-## Setup
+## Getting Started
 
-1. Ensure that `nvm` is [installed](https://github.com/nvm-sh/nvm#install--update-script).
-2. Clone the repository.
-3. If `nvm` doesn't auto-load the Node.js environment when changing to the repo directory, run `nvm use`.
-4. Enable Yarn by running `corepack enable`.
+To get a local copy up and running, follow these steps:
 
-## Getting started
+### Prerequisites
 
-After cloning the repository begin by installing dependencies at the root.
+Ensure you have the following tools installed:
 
-```shell
-yarn
-yarn build
-```
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-## Local development
+### Installation
 
-To start a development server on localhost, run `yarn workspace @app/<project> dev`.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/nodoubtz/web.git
+   ```
+2. Navigate to the directory:
+   ```bash
+   cd web
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-For example, to start the `web` app locally, you would run `yarn workspace @app/web dev`.
+## Usage
 
-## Projects
+Provide usage instructions here. For example:
 
-There are three projects which can be run individually.
-
-### Web
-
-```
-yarn workspace @app/web dev
-```
-
-### Docs
-
-```
-yarn workspace @app/base-docs dev
-```
-
-### Bridge
-
-```
-yarn workspace @app/bridge dev
+```bash
+npm start
 ```
 
 ## Contributing
 
-We welcome contributions to Base! For guidelines on how to contribute please refer to [CONTRIBUTING.md](CONTRIBUTING.md).
+Contributions are what make the open-source community an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**. 
 
-### Updating the Base Ecosystem Page
+To contribute:
 
-If you're a builder who wants to add or update your project on the [Base Ecosystem](https://base.org/ecosystem) page, follow these steps:
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-1. Fork this repository.
+## License
 
-2. Create a new branch for your changes.
+Distributed under the Apache License 2.0. See `LICENSE` for more information.
 
-3. Create a directory for your project under `apps/web/src/data/ecosystem/` using a URL-safe version of your project name:
+## Acknowledgments
 
-   ```bash
-   mkdir apps/web/src/data/ecosystem/your-project-name
-   ```
-
-Project names must be unique. If a project with your name already exists, please reach out to us on Discord.
-
-4. Create a metadata.json file in your project directory:
-
-   ```json
-   {
-     "name": "Your Project Name",
-     "description": "A brief description (less than 200 characters)",
-     "url": "https://your-project.com",
-     "imageUrl": "/images/partners/your-logo.png",
-     "category": "one of: ai, consumer, defi, infra, onramp, wallet",
-     "subcategory": "see categories below"
-   }
-   ```
-
-   - name: Your project's name
-   - description: A brief description of your project, must be less than 200 characters
-   - url: Your project's website URL
-   - imageUrl: Path to your project's logo image
-   - category: Your project's category, _one_ of: `ai`, `consumer`, `defi`, `infra`, `onramp`, `wallet`
-   - subcategory: Your project's subcategory, with the following options associated with each category
-     - `ai`: Simply add `ai` as the subcategory as well
-     - `consumer`: _One_ of `creator`, `crypto taxes`, `dao`, `gaming`, `messaging`, `music`, `nft`, `payments`, `real world`, `social`
-     - `defi`: _One_ of `dex`, `dex aggregator`, `insurance`, `lending/borrowing`, `liquidity management`, `portfolio`, `stablecoin`, `yield vault`
-     - `infra`: _One_ of `bridge`, `data`, `depin`, `developer tool`, `identity`, `node provider`, `raas`, `security`
-     - `onramp`: _One_ of `centralized exchange`, `fiat on-ramp`
-     - `wallet`: _One_ of `account abstraction`, `multisig`, `self-custody`
-
-If your app supports multiple networks, ensure the URL provided points to a page
-with Base already selected as the network, for people who will be visiting from
-base.org.
-
-5. Add your project's logo:
-   - Place a 192x192 pixel PNG/WebP file in `apps/web/public/images/partners/`
-   - Name should match what you specified in imageUrl
-   - Use an App/Play Store style icon (not a full wordmark)
-
-By opening a PR to add your project, you authorize and license Coinbase on a non-exclusive, worldwide, irrevocable, sublicensable, and royalty-free basis to reproduce, distribute, transmit, make available, perform, display, or otherwise use the submitted Multimedia Assets for any purpose, including any marketing or promotional activities related to Base or Coinbase. Any goodwill associated with use of trademarks submitted in your Multimedia Assets will inure to your benefit. You further acknowledge and represent that you have all IP rights in the Multimedia Assets, that the Multimedia Assets do not infringe the rights of any third party, and that you have the right to grant this license to Coinbase.
-
-**Note:** Submissions do not guarantee inclusion and all submissions are subject to review. Your project must be live on Base to potentially be included. Ensure all information is accurate and up-to-date.
-
-#### Submission requirements
-
-- App content adheres to the [Base Editorial Style Guide](https://github.com/base/brand-kit/blob/main/guides/editorial-style-guide.md)
-- App has been live on Base for at least 30 days
-- App has a Terms of Service and Privacy Policy
-- App supports HTTPS and 301 redirects HTTP requests
-- App is not a TGE (Token Generation Event), ICO (Initial Coin Offering), airdrop, claim, or similar
-- Landing page is a Base-specific page for users who will be coming from base.org
-- Active development and community engagement can be observed without issue
-
----
-
-If you have any questions, please reach out to us in #developer-chat in the [Base Discord](https://base.org/discord).
+- [Add any acknowledgments here]
